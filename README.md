@@ -44,11 +44,11 @@
 
 ## 感想 
 
-這個 repository 的名稱之所是 "WIFI SEND FREEDOM"，是因為我發現程式碼裡真正送出封包的函示名稱是 `wifi_send_pkt_freedom()`。
+這個 repository 的名稱命名為 "WIFI SEND FREEDOM"，是因為發現程式碼裡真正送出封包的函示名稱是 `wifi_send_pkt_freedom()`。
 
 這樣的裝置對「表達訴求」來說是相對安全的，但力道和震撼度絕對無法與[北京四通橋抗議](https://zh.m.wikipedia.org/zh-hant/%E5%8C%97%E4%BA%AC%E5%9B%9B%E9%80%9A%E6%A1%A5%E6%8A%97%E8%AE%AE)相比。
 
-在這 2022 年 -- 這個網路科技如此進步的時代。當人民被迫只能使用「白紙」、「WiFi SSID」這樣低科技的媒材來表達不滿時，反映的意義是什麼？
+在 2022 年 -- 這個網路科技如此進步的時代。當人民被迫只能使用「白紙」、「WiFi SSID」這樣的媒介表達不滿時，反映的意義是什麼？
 
 
 ## 研究 & 動手做
