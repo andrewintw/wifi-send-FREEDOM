@@ -251,6 +251,10 @@ const char *ssid_list[] = {
 
 ![](images/ssid1.jpg)
 
+從分析儀上可以看得出來，每個 SSID 都隨機出現在不同的 channel
+
+![](images/wifi-analyzer2.png)
+
 一些重點提醒
 
 * 根據實測，如果你希望能「同時顯示」，差不多 6 ~ 8 個 SSID 是比較適當的。
