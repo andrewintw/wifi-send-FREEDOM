@@ -226,7 +226,7 @@ void loop() {
 
 ### 發聲 
 
-最終的程式碼在 [SpeakUp](SpeakUp) 目錄下。你需要修改的是 ssid_list[] 清單裡的內容。
+最終的程式碼在 [SpeakUp](https://github.com/andrewintw/wifi-send-FREEDOM/tree/main/SpeakUp) 目錄下。你需要修改的是 ssid_list[] 清單裡的內容。
 
 ```
 const char *ssid_list[] = {

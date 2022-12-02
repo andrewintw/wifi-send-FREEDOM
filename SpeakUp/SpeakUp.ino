@@ -22,7 +22,6 @@ void setup() {
   delay(500);
   wifi_set_opmode(STATION_MODE);
   wifi_promiscuous_enable(1);
-
 }
 
 void broadcast_ssid(const char* ssid) {
