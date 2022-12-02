@@ -4,6 +4,9 @@
 
 所有文件、程式碼都以 CC0 釋出
 
+* 主要程式: [SpeakUp.ino](SpeakUp/SpeakUp.ino)
+* 測試程式: [BeaconTest.ino](BeaconTest/BeaconTest.ino)
+
 ## 專案起源
 
 [&#x23;白紙革命](https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%B0%8D%E5%8B%95%E6%85%8B%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E9%81%8B%E5%8B%95)時，看到有人分享：[基于esp8266的wifi ssid广播通信](https://libreddit.nl/r/China_irl/comments/ygcbd3/%E5%9F%BA%E4%BA%8Eesp8266%E7%9A%84wifi_ssid%E5%B9%BF%E6%92%AD%E9%80%9A%E4%BF%A1/?fbclid=IwAR0ld_9tIWD1t9u8N5ZNgUm1TVDx1rufM6YWUer28nC6nlY5vjOlEO4fzG4) 這個專案。
@@ -242,7 +245,9 @@ const char *ssid_list[] = {
 
 運作效果
 
-![](images/ssid2.jpg) ![](images/ssid1.jpg)
+![](images/ssid2.jpg)
+
+![](images/ssid1.jpg)
 
 一些重點提醒
 
