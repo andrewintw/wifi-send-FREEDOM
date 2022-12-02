@@ -1,11 +1,13 @@
 # WIFI SEND FREEDOM -- #A4Revolution
 
-![](images/cc0.png)
+![](images/ssid2.jpg)
 
 所有文件、程式碼都以 CC0 釋出
 
 * 主要程式: [SpeakUp.ino](SpeakUp/SpeakUp.ino)
 * 測試程式: [BeaconTest.ino](BeaconTest/BeaconTest.ino)
+
+![](images/cc0.png)
 
 ## 專案起源
 
