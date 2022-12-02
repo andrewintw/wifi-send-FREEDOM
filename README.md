@@ -1,7 +1,10 @@
 # WIFI SEND FREEDOM -- #A4Revolution
 
+![](images/cc0.png)
 
-## 故事起源
+所有文件、程式碼都以 CC0 釋出
+
+## 專案起源
 
 [&#x23;白紙革命](https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%B0%8D%E5%8B%95%E6%85%8B%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E9%81%8B%E5%8B%95)時，看到有人分享：[基于esp8266的wifi ssid广播通信](https://libreddit.nl/r/China_irl/comments/ygcbd3/%E5%9F%BA%E4%BA%8Eesp8266%E7%9A%84wifi_ssid%E5%B9%BF%E6%92%AD%E9%80%9A%E4%BF%A1/?fbclid=IwAR0ld_9tIWD1t9u8N5ZNgUm1TVDx1rufM6YWUer28nC6nlY5vjOlEO4fzG4) 這個專案。
 
@@ -214,3 +217,37 @@ void loop() {
 * 接續在 SSID 後面的 Supported Rates 和 DS Parameter set，其長度都為 13，可以在決定 SSID 後再加上來
 * wifi_send_pkt_freedom() 的第二個參數是 packet[] 的使用長度，應該要自動計算
 * loop() 的抽象化程度可以再好一些
+
+
+### 發聲 
+
+最終的程式碼在 [SpeakUp](SpeakUp) 目錄下。你需要修改的是 ssid_list[] 清單裡的內容。
+
+```
+const char *ssid_list[] = {
+  // UTF-8 encoder/decoder: https://mothereff.in/utf-8
+  " 1 \xE4\xB8\x8D\xE8\xA6\x81\xE6\xA0\xB8\xE9\x85\xB8\xE8\xA6\x81\xE5\x90\x83\xE9\xA3\xAF", /* 不要核酸要吃飯 */
+  " 2 \xE4\xB8\x8D\xE8\xA6\x81\xE5\xB0\x81\xE6\x8E\xA7\xE8\xA6\x81\xE8\x87\xAA\xE7\x94\xB1", /* 不要封控要自由 */
+  " 3 \xE4\xB8\x8D\xE8\xA6\x81\xE8\xAC\x8A\xE8\xA8\x80\xE8\xA6\x81\xE5\xB0\x8A\xE5\x9A\xB4", /* 不要謊言要尊嚴 */
+  " 4 \xE4\xB8\x8D\xE8\xA6\x81\xE6\x96\x87\xE9\x9D\xA9\xE8\xA6\x81\xE6\x94\xB9\xE9\x9D\xA9", /* 不要文革要改革 */
+  " 5 \xE4\xB8\x8D\xE8\xA6\x81\xE9\xA0\x98\xE8\xA2\x96\xE8\xA6\x81\xE9\x81\xB8\xE7\xA5\xA8", /* 不要領袖要選票 */
+  " 6 \xE4\xB8\x8D\xE5\x81\x9A\xE5\xA5\xB4\xE6\x89\x8D\xE5\x81\x9A\xE5\x85\xAC\xE6\xB0\x91", /* 不做奴才做公民 */
+  //  " #FREEHONGKONG",
+  //  " #FREEEASTTURKESTAN",
+  //  " #FREETIBET",
+  //  " #STAYTAIWANFREE",
+  //  " #FREECHINA",
+};
+```
+
+運作效果
+
+![](images/ssid2.jpg) ![](images/ssid1.jpg)
+
+一些重點提醒
+
+* 根據實測，如果你希望能「同時顯示」，差不多 6 ~ 8 個 SSID 是比較適當的。
+* 如果你的 SSID 需要使用中文，必須先 encode 為 utf8 格式，可以利用一些 [UTF8 Encode Online Tool](https://mothereff.in/utf-8)。
+* 調整 beacon_packet[] 裡的 Beacon Interval 似乎也會影響 SSID 同時顯示的個數，但我沒有再繼續鑽研了。
+
+~ END ~
